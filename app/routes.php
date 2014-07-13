@@ -19,14 +19,14 @@ Route::get('/', function()
 
 Route::get('users', function()
 {
-  // $users = User::all();
+  $users = User::all();
 
   // $user = new User;
 
   // $user->name = 'Johnsss';
   // $user->email = 'Johnss@gmail.com';
 
-  $user->save();
+  //$user->save();
 
   // $users = User::where('name', '=', 'weerapat')->get();
 
