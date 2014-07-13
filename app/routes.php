@@ -19,7 +19,20 @@ Route::get('/', function()
 
 Route::get('users', function()
 {
-    $users = User::all();
+  // $users = User::all();
 
+  // $user = new User;
+
+  // $user->name = 'Johnsss';
+  // $user->email = 'Johnss@gmail.com';
+
+  $user->save();
+
+  // $users = User::where('name', '=', 'weerapat')->get();
+
+  // foreach ($users as $user)
+  // {
+  //     var_dump($user->name);
+  // }
     return View::make('users')->with('users', $users);
 });
