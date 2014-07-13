@@ -36,3 +36,10 @@ Route::get('users', function()
   // }
     return View::make('users')->with('users', $users);
 });
+
+
+Route::get('user/{id}', 'UserController@showProfile');
+Route::post('profile', 'UserController@profile');
+
+
+//Route::controller('users', 'UserController');
