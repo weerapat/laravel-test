@@ -2,7 +2,7 @@
 
 
 @section('content')
-    Hello user s
+    Hello user
     @foreach($users as $user)
         <p>{{ $user->name }}</p>
     @endforeach
